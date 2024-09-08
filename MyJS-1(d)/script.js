@@ -90,3 +90,13 @@ console.log('My name is' + fname  + ' ' + lname + ', call me'  + fname )  //こ�
 console.log(`My name is ${fname} ${lname}, call me ${fname}`)  //テンプレートリテラル (` を付け　${})
 
 
+
+/*
+数値か文字列かを意識--------------------------------------------
+*/
+
+const n = prompt('Any number?')
+
+console.log(Number(n) + 10);
+
+
