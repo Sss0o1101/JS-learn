@@ -57,11 +57,21 @@ console.log(price * 120 * rate);
 console.log(price * 130 * rate);
 console.log(price * 140 * rate);
 
-// price = 151;
-// price = price + 1;
-// price += 1;
-// price *= 1.5;
+price = 151;
+price = price + 1;
+price += 1;
+price *= 1.5;
 price++;
 console.log(price * 120 * rate);
 console.log(price * 130 * rate);
 console.log(price * 140 * rate);
+
+
+/*
+文字列--------------------------------------------
+*/
+
+console.log('It is a pen.');
+console.log('It\'s a pen.');
+console.log("It's a pen.");
+console.log("It's \na \npen."); // 　\nは改行　\は「Option」キーを押しながら「￥」キーを押す。
