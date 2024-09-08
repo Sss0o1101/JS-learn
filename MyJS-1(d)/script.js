@@ -75,3 +75,18 @@ console.log('It is a pen.');
 console.log('It\'s a pen.');
 console.log("It's a pen.");
 console.log("It's \na \npen."); // 　\nは改行　\は「Option」キーを押しながら「￥」キーを押す。
+
+
+/*
+文字列の操作--------------------------------------------
+*/
+
+// 「　My name is Taro Yamada, call me Taro!　」 のケース
+
+const fname = 'Taro';
+const lname = 'Yamada';
+
+console.log('My name is' + fname  + ' ' + lname + ', call me'  + fname )  //これでも良いが、テンプレートリテラルをつかうべきである。
+console.log(`My name is ${fname} ${lname}, call me ${fname}`)  //テンプレートリテラル (` を付け　${})
+
+
