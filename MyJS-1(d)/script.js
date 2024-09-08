@@ -100,3 +100,24 @@ const n = prompt('Any number?')
 console.log(Number(n) + 10);
 
 
+
+/*
+条件文--------------------------------------------
+*/
+
+const score = Number(prompt('Score?'));
+
+if (score >= 90) {
+    console.log('A!')
+}
+ //score が 90 点以上だったら console.log() で A 判定だよという意味でこのように表示。
+
+if (score >= 90) {
+    console.log('A!')
+} else {
+    console.log('Not A!')
+}
+//score が 90 点未満だったら、 A 判定じゃなかったという意味で Not A! と表示。
+
+
+
