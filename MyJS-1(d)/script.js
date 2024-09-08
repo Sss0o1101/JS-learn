@@ -184,3 +184,17 @@ switch (color) {
 }
 //青信号は国によっては緑信号だったりするので、ここで blue もしくは green だったらという条件にしたい場合、
 //case を case 'blue'; case 'green'; のように繋げて 2 行書く
+
+
+/*
+ループ文--------------------------------------------
+*/
+
+for (let i = 0; i < 3; i++) {
+    console.log('Hello');
+}
+
+for (let i = 0; i < 3; i++) {
+    console.log(`${i}: Hello`);
+}
+
