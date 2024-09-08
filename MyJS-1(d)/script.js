@@ -8,7 +8,7 @@ console.log(1.2e4);  // 1.2に10の4条 = 12000
 console.log(1.2e-4);  // 1.2に10の-4条 = 0.00012
 
 /*
-演算子
+演算子--------------------------------------------
 */
 
 console.log(10 + 3);
@@ -21,7 +21,7 @@ console.log(10 + 2 * 3); // 16
 console.log((10 + 2) * 3); // 36
 
 /*
-定数
+定数--------------------------------------------
 */
 
 console.log(150 * 120 * 1.1);
@@ -36,5 +36,25 @@ console.log(price * 120 * rate);
 console.log(price * 130 * rate);
 console.log(price * 140 * rate);
 
+
+
+/*
+変数--------------------------------------------
+*/
+
+// 変数
+let price;
+// 定数
+const rate = 1.1;
+
+price = 150;
+console.log(price * 120 * rate);
+console.log(price * 130 * rate);
+console.log(price * 140 * rate);
+
+price = 151;
+console.log(price * 120 * rate);
+console.log(price * 130 * rate);
+console.log(price * 140 * rate);
 
 
