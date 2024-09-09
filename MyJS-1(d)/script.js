@@ -217,7 +217,6 @@ console.log(price * 130 * rate);
 console.log(price * 140 * rate);
 //150 円 151 円のときだけでなく、160 円までの売り上げを知りたかった時のケース
 
-//
 let price;
 const rate = 1.1;
 
@@ -231,4 +230,13 @@ console.log(price * 130 * rate);
 console.log(price * 140 * rate);
 
 //120 から 140 まで、10 ずつ増やしたいが、10 増やして再代入していくには、以前に見たこちらの記法を使う。
-　
+
+const rate = 1.1;
+
+for (let price = 150; price <= 160; price++) {
+  console.log(`Price: ${price}`);
+  for (let amount = 120; amount <= 140; amount+=10) {
+    console.log(price * amount * rate);
+  }
+}
+
