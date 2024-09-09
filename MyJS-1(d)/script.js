@@ -240,3 +240,30 @@ for (let price = 150; price <= 160; price++) {
   }
 }
 
+/*
+論理演算子--------------------------------------------
+*/
+
+const english = Number(prompt("English"));
+const math = Number(prompt(math));
+
+if (english >= 80 && math >= 80) {
+    console.log("A");
+} else {
+    console.log("B");
+}
+//英語が 80 点以上なおかつ数学が 80 点以上のケース
+
+const english = Number(prompt('English?'));
+const math = Number(prompt('Math?'));
+
+if (!(english >= 80 && math >= 80)) {
+  console.log('A');
+} else {
+  console.log('B');
+}
+//この条件全体を否定して、英語が 80 点以上なおかつ数学が 80 点以上ではなかったらとしたかったら 
+//if (!(english >= 80 && math >= 80)) のように書けば OK
+
+
+。
