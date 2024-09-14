@@ -11,7 +11,7 @@ console.log(1.2e-4);  // 1.2に10の-4条 = 0.00012
 演算子--------------------------------------------
 */
 
-console.log(10 + 3);
+console.log(10 + 3); // 13
 console.log(10 - 3); // 7
 console.log(10 * 3); // 30
 console.log(10 ** 3); // 1000
@@ -32,9 +32,9 @@ console.log(150 * 140 * 1.1);
 const price = 150;
 const rate = 1.1;
 
-console.log(price * 120 * rate);
-console.log(price * 130 * rate);
-console.log(price * 140 * rate);
+console.log(price * 120 * rate); // 18150
+console.log(price * 130 * rate); // 19500
+console.log(price * 140 * rate); // 21000
 
 
 
@@ -48,23 +48,23 @@ let price;
 const rate = 1.1;
 
 price = 150;
-console.log(price * 120 * rate);
-console.log(price * 130 * rate);
-console.log(price * 140 * rate);
+console.log(price * 120 * rate); // 18150
+console.log(price * 130 * rate); // 19500
+console.log(price * 140 * rate); // 21000
 
 price = 151;
-console.log(price * 120 * rate);
-console.log(price * 130 * rate);
-console.log(price * 140 * rate);
+console.log(price * 120 * rate); // 18220
+console.log(price * 130 * rate); // 19630
+console.log(price * 140 * rate); // 21140
 
 price = 151;
 price = price + 1;
 price += 1;
 price *= 1.5;
 price++;
-console.log(price * 120 * rate);
-console.log(price * 130 * rate);
-console.log(price * 140 * rate);
+console.log(price * 120 * rate); // 18220
+console.log(price * 130 * rate); // 19740
+console.log(price * 140 * rate); // 21250
 
 
 /*
@@ -74,14 +74,14 @@ console.log(price * 140 * rate);
 console.log('It is a pen.');
 console.log('It\'s a pen.');
 console.log("It's a pen.");
-console.log("It's \na \npen."); // 　\nは改行　\は「Option」キーを押しながら「￥」キーを押す。
+console.log("It's \na \npen."); //  「\n」は改行 「\」は Optionキーを押しながら「￥」キーを押す。
 
 
 /*
 文字列の操作--------------------------------------------
 */
 
-// 「　My name is Taro Yamada, call me Taro!　」 のケース
+// 「 My name is Taro Yamada, call me Taro! 」 のケース
 
 const fname = 'Taro';
 const lname = 'Yamada';
@@ -207,14 +207,14 @@ let price;
 const rate = 1.1;
 
 price = 150;
-console.log(price * 120 * rate);
-console.log(price * 130 * rate);
-console.log(price * 140 * rate);
+console.log(price * 120 * rate);   //18150
+console.log(price * 130 * rate);   //19500
+console.log(price * 140 * rate);   //21000
 
 price++;
-console.log(price * 120 * rate);
-console.log(price * 130 * rate);
-console.log(price * 140 * rate);
+console.log(price * 120 * rate);   //18220  
+console.log(price * 130 * rate);   //19740
+console.log(price * 140 * rate);   //21250
 //150 円 151 円のときだけでなく、160 円までの売り上げを知りたかった時のケース
 
 let price;
@@ -225,9 +225,9 @@ for (let price = 150; price < 160; price++) {
 }
 
 price = 150;
-console.log(price * 120 * rate);
-console.log(price * 130 * rate);
-console.log(price * 140 * rate);
+console.log(price * 120 * rate);   //18150
+console.log(price * 130 * rate);   //19500
+console.log(price * 140 * rate);   //21000
 
 //120 から 140 まで、10 ずつ増やしたいが、10 増やして再代入していくには、以前に見たこちらの記法を使う。
 
