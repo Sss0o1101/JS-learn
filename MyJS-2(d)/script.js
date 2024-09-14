@@ -59,6 +59,28 @@ scores.forEach((score, index) => {
 //3: 40
 //4: 50
 
+// このように、配列と反復処理を組み合わせるには forEach() と for() を使う事ができます。
+
+/*
+配列の値を集計(点数の合計と平均など)--------------------------------------------
+*/
+
+const scores = [10, 20, 30, 40, 50];
+
+let sum = 0;
+
+scores.forEach((score) => {
+    // sum = sum + score;
+    sum += score;
+    console.log(`${index}: ${score}`);
+});
+
+console.log(sum); //150
+console.log(sum / scores.length); //30
+console.log(`Sum: ${sum}`);//Sum: 150
+console.log(`Average: ${sum / scores.length}`); //Average: 30
+
+
 /*
 forEach()で配列を処理--------------------------------------------
 */
