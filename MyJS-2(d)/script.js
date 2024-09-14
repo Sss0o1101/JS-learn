@@ -33,3 +33,14 @@ for (let i = 0; i <= scores.length; i++) {
 
 
 
+/*
+forEach()の動作--------------------------------------------
+*/
+
+const scores = [10, 20, 30, 40, 50];
+
+scores.forEach((score) => {
+    console.log(score);
+});
+
+const scores = [10, 20, 30, 40, 50];
