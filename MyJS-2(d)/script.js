@@ -31,8 +31,6 @@ for (let i = 0; i <= scores.length; i++) {
     console.log(scores[i]);
 }
 
-
-
 /*
 forEach()の動作--------------------------------------------
 */
@@ -44,3 +42,23 @@ scores.forEach((score) => {
 });
 
 const scores = [10, 20, 30, 40, 50];
+
+/*
+forEach()で配列を処理--------------------------------------------
+*/
+
+const scores = [10, 20, 30, 40, 50];
+
+scores.forEach((score, index) => {
+    // console.log(score);
+    console.log(`${index}: ${score}`);
+});
+//0: 10
+//1: 20
+//2: 30
+//3: 40
+//4: 50
+
+/*
+forEach()で配列を処理--------------------------------------------
+*/
