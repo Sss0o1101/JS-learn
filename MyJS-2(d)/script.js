@@ -18,3 +18,18 @@ scores.push(60); //末尾に要素を追加
 scores.pop(); //末尾の要素を削除
 scores.unshift(70); //先頭に要素を追加
 scores.shift(); //先頭の要素を削除
+
+
+
+/*
+配列とforの組み合わせ--------------------------------------------
+*/
+
+const scores = [10, 20, 30, 40, 50];
+
+for (let i = 0; i <= scores.length; i++) {
+    console.log(scores[i]);
+}
+
+
+
