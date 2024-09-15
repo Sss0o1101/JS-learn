@@ -89,4 +89,9 @@ console.log(`Average: ${sum / scores.length}`); //Average: 30
 
 const scores = {math: 80, english: 90};
 
-console.log(scores);
+console.log(scores);  //{math: 80, english: 90}
+console.log(scores.english);  //英語のみの点数
+
+scores.math = 88;
+console.log(scores);  //更新された数学の点数
+
