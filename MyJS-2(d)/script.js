@@ -108,7 +108,7 @@ scores.physics = 70;  //{math: 80, english: 90, physics: 70} この様に物理�
 delete scores.english;  //英語の点数(プロパティ)の削除
 
 /*
-オブジェクトと反復処理を組み合わせる(点数の合計と平均)------------------------------------------------------------------
+オブジェクトと反復処理を組み合わせる------------------------------------------------------------------
 */
 
 const scores = {math: 80, english: 90};
@@ -119,7 +119,25 @@ console.log(entries);   // [Array(2),Array(2)]
 entries.forEach((prop) => {
 
     console.log(prop);  // ['math', 80] ['english', 90]
-
     console.log(`${prop[0]}: ${prop[1]}`);  // math: 80  english: 90
 
 });
+
+/*
+Object.entries()を使ってプロパティの値を集計(点数の合計と平均)-----------------------------------------------------------------
+*/
+
+const scores = {math: 80, english: 90};
+
+let sum = 0;
+
+scores.physics =70;
+
+const entries = Object.entries(scores)
+entries.forEach((prop) =>{
+    sum += prop[1];
+    console.log(`${prop[0]} ${prop[1]}`);
+})
+
+console.log(`Sum: ${sum}`);   // Sum: 240
+console.log(`Average: ${sum / entries.length}`);  //Average: 80
