@@ -32,7 +32,7 @@ for (let i = 0; i <= scores.length; i++) {
 }
 
 /*
-forEach()の動作-------------------------------------------------------------------------------
+forEach()の動作 「配列の要素を順番に取り出し」-------------------------------------------------------------------------------
 */
 
 const scores = [10, 20, 30, 40, 50];
@@ -102,8 +102,24 @@ console.log(scores);  //更新された数学の点数
 オブジェクトにプロパティを追加、削除------------------------------------------------------------------
 */
 
-const scores = {math: 80, english: 90}; 
+const scores = {math: 80, english: 90};
 
 scores.physics = 70;  //{math: 80, english: 90, physics: 70} この様に物理の点数も追加される。
 delete scores.english;  //英語の点数(プロパティ)の削除
 
+/*
+オブジェクトと反復処理を組み合わせる(点数の合計と平均)------------------------------------------------------------------
+*/
+
+const scores = {math: 80, english: 90};
+
+const entries = Object.entries(scores);
+console.log(entries);   // [Array(2),Array(2)]
+
+entries.forEach((prop) => {
+
+    console.log(prop);  // ['math', 80] ['english', 90]
+
+    console.log(`${prop[0]}: ${prop[1]}`);  // math: 80  english: 90
+
+});
