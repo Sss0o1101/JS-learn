@@ -141,3 +141,19 @@ entries.forEach((prop) =>{
 
 console.log(`Sum: ${sum}`);   // Sum: 240
 console.log(`Average: ${sum / entries.length}`);  //Average: 80
+
+
+
+
+/*
+splice()の挙動-----------------------------------------------------------------
+*/
+
+const scores = [70, 90, 80, 85];
+scores.splice(2, 0, 77, 88);  // [70, 90, 77, 88, 80, 85]
+
+const deleted = splice(3, 1);  // [88]
+scores.splice(2, 2, 30);  // [70, 90, 30, 85]
+
+console.log(scores);  //[70, 90, 30, 85]
+console.log(deleted);  //[88]
