@@ -81,6 +81,12 @@ console.log(`Sum: ${sum}`);//Sum: 150
 console.log(`Average: ${sum / scores.length}`); //Average: 30
 
 
+
+
 /*
-forEach()で配列を処理--------------------------------------------
+オブジェクトを作成してコンソールで表示。--------------------------------------------
 */
+
+const scores = {math: 80, english: 90};
+
+console.log(scores);
