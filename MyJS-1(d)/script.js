@@ -212,7 +212,7 @@ console.log(price * 130 * rate);   //19500
 console.log(price * 140 * rate);   //21000
 
 price++;
-console.log(price * 120 * rate);   //18220  
+console.log(price * 120 * rate);   //18220
 console.log(price * 130 * rate);   //19740
 console.log(price * 140 * rate);   //21250
 //150 円 151 円のときだけでなく、160 円までの売り上げを知りたかった時のケース
@@ -262,7 +262,5 @@ if (!(english >= 80 && math >= 80)) {
 } else {
   console.log('B');
 }
-//この条件全体を否定して、英語が 80 点以上なおかつ数学が 80 点以上ではなかったらとしたかったら 
+//この条件全体を否定して、英語が 80 点以上なおかつ数学が 80 点以上ではなかったらとしたかったら
 //if (!(english >= 80 && math >= 80)) のように書けば OK.
-
-
