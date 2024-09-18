@@ -176,3 +176,13 @@ console.log(names.split()); // ['Taro|Jiro|Saburo']
 console.log(names.split('')); // ['T', 'a', 'r', 'o', '|', 'J', 'i', 'r', 'o', '|', 'S', 'a', 'b', 'u', 'r', 'o']
 
 
+/*
+map()「配列の要素を処理して新しい配列を作る」-----------------------------------------------------------------
+*/
+
+const  prices = [100, 150, 200];
+
+const pricesWithTax = [];
+prices.forEach((price) => {
+  pricesWithTax.push(price * 1.1);
+  });
