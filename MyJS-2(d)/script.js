@@ -217,3 +217,9 @@ filter()「配列から条件に合致した要素だけを取り出して新し
 /*
 分割代入-----------------------------------------------------------------
 */
+
+const scores = [70, 90, 80, 85];
+  const first = scores[0];
+  const second = scores[1];
+  const third = scores[2];
+  const fourth = scores[3];
