@@ -207,3 +207,7 @@ filter()「配列から条件に合致した要素だけを取り出して新し
 //     pricesOver150.push(price);
 //   }
 // });
+
+  const pricesOver150 = prices.filter((price) => {
+    return price >= 150;
+  });
