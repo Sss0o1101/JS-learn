@@ -182,7 +182,13 @@ map()「配列の要素を処理して新しい配列を作る」---------------
 
 const  prices = [100, 150, 200];
 
-const pricesWithTax = [];
-prices.forEach((price) => {
-  pricesWithTax.push(price * 1.1);
+// const pricesWithTax = [];
+// prices.forEach((price) => {
+//   pricesWithTax.push(price * 1.1);
+//   });
+
+  const pricesWithTax = prices.map((price) => {
+    return price * 1.1;
   });
+
+  console.log(pricesWithTax);  //[110, 165, 220]
