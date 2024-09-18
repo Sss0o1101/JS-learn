@@ -229,3 +229,8 @@ console.log(first);  //70
 console.log(second); //90
 console.log(third);  //80
 console.log(fourth); //85
+
+
+/*
+分割代入での値の入替え方法-----------------------------------------------------------------
+*/
