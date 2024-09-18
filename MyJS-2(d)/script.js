@@ -174,3 +174,15 @@ const names = 'Taro|Jiro|Saburo';
 console.log(names.split('|')); // ['Taro', 'Jiro', 'Saburo']
 console.log(names.split()); // ['Taro|Jiro|Saburo']
 console.log(names.split('')); // ['T', 'a', 'r', 'o', '|', 'J', 'i', 'r', 'o', '|', 'S', 'a', 'b', 'u', 'r', 'o']
+
+
+/*
+join()、split()の挙動「配列と文字列を相互に変換」-----------------------------------------------------------------
+*/
+
+const names = ['Taro', 'Jiro', 'Saburo'];
+
+// Taro,Jiro,Saburo
+console.log(names.join(',')); // Taro,Jiro,Saburo
+console.log(names.join()); // Taro,Jiro,Saburo
+console.log(names.join('')); // TaroJiroSaburo
