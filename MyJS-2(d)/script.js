@@ -223,3 +223,4 @@ const scores = [70, 90, 80, 85];
 //   const second = scores[1];
 //   const third = scores[2];
 //   const fourth = scores[3];
+const [first, second, third, fourth] = scores;
