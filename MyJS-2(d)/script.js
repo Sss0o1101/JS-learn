@@ -162,3 +162,12 @@ console.log(deleted);  //[88]
 /*
 join()、split()の挙動「配列と文字列を相互に変換」-----------------------------------------------------------------
 */
+
+const names = ['Taro', 'Jiro', 'Saburo'];
+
+// Taro|Jiro|Saburo
+console.log(names.join('|')); // Taro|Jiro|Saburo
+console.log(names.join()); // Taro,Jiro,Saburo
+console.log(names.join('')); // TaroJiroSaburo
+
+
