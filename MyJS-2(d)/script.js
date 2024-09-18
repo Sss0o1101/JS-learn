@@ -192,3 +192,18 @@ const  prices = [100, 150, 200];
   });
 
   console.log(pricesWithTax);  //[110, 165, 220]
+
+
+
+/*
+filter()「配列から条件に合致した要素だけを取り出して新しい配列を作る」-----------------------------------------------------------------
+*/
+
+const prices = [100, 150, 200];
+
+const pricesOver150 = [];
+prices.forEach((price) => {
+  if (price >= 150) {
+    pricesOver150.push(price);
+  }
+});
