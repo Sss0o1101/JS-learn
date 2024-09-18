@@ -224,3 +224,8 @@ const scores = [70, 90, 80, 85];
 //   const third = scores[2];
 //   const fourth = scores[3];
 const [first, second, third, fourth] = scores;
+
+console.log(first);  //70
+console.log(second); //90
+console.log(third);  //80
+console.log(fourth); //85
