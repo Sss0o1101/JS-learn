@@ -211,3 +211,5 @@ filter()「配列から条件に合致した要素だけを取り出して新し
   const pricesOver150 = prices.filter((price) => {
     return price >= 150;
   });
+
+  console.log(pricesOver150);  //[150, 200]
