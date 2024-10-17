@@ -140,3 +140,55 @@
     } else {
     console.log("私の点数は10点未満です");
     }
+
+/*
+条件文 switch--------------------------------------------
+*/
+
+    const weather = "雨";
+
+    switch (weather) {
+    case "晴れ":
+    console.log("洗濯をします");
+    break;
+    case "大雨":
+        console.log("傘を持っていきます");
+        break;
+    default:
+        console.log("傘を持っていかないです");
+        break;
+    }
+//----------------------------
+    const n = 2;
+
+    switch (n) {
+    case 1:
+        console.log("大吉です");
+        break;
+    case 2:
+        console.log("吉です");
+        break;
+    case 3:
+        console.log("小吉です");
+        break;
+    }
+
+// default----------------------------
+
+    const N = 4;
+
+    switch (N) {
+    case 1:
+        console.log("大吉です");
+        break;
+    case 2:
+        console.log("吉です");
+        break;
+    case 3:
+        console.log("小吉です");
+        break;
+    // どのcaseにも合致しなかったときの処理を追加してください
+    default:
+        console.log("凶です");
+        break;
+    }
