@@ -86,7 +86,7 @@ for文 if else 1 ---------------------------------------------------------------
 
     // for文を用いて、配列の値を順にコンソールに出力してください
     for (let i = 0; i < 3; i++) {
-        console.log(Animal[i]);
+        console.log(Animal[i]); // dog cat sheep
     }
 
 /*
@@ -102,19 +102,80 @@ for文 if else 1 ---------------------------------------------------------------
         console.log(aNimals[i]); // dog cat sheep rabbit monkey tiger bear elephant
     }
 
+/*
+配列  配列とオブジェクト--------------------------------------------------------------------------------------------
+*/
+    const item = {weapon: "剣", price: 500};
 
+    console.log(item); // {weapon: "剣", price: 500}
 
+    // オブジェクトの武器の値を出力してください
+    console.log(item.weapon); // 剣
 
+    // オブジェクトの武器の値を"ナイフ"に更新してください
+    item.weapon = "ナイフ";
+    console.log(item.weapon); // ナイフ
 
+/*
+配列  オブジェクトを要素に持つ配列 --------------------------------------------------------------------------------------------
+*/
+    const items = [
+        {weapon: "剣", price: 500},
+        {weapon: "ナイフ", price: 300},
+        {weapon: "ハンマー", price: 1000},
+    ];
 
+    console.log(items); // [{weapon: "剣", price: 500}, {weapon: "ナイフ", price: 300}, {weapon: "ハンマー", price: 1000}]
 
+    // 配列のインデックス番号を用いて、"剣"を出力してください
+    console.log(items[0]); // {weapon: "剣", price: 500}
+    console.log(items[0].weapon); // 剣
+    console.log(items[1].price); // 300
 
+/*
+配列  配列{オブジェクト}と繰り返し処理 --------------------------------------------------------------------------------------------
+*/
+    const Item = [
+        {weapon: "剣", price: 500},
+        {weapon: "ナイフ", price: 300},
+        {weapon: "ハンマー", price: 1000},
+    ];
 
+    // for文を用いて、配列の値を順にコンソールに出力してください
+    for (let i = 0; i < Item.length; i++) {
+        console.log(Item[i]); // {weapon: "剣", price: 500} {weapon: "ナイフ", price: 300} {weapon: "ハンマー", price: 1000}
+    }
 
+    // for文を用いて、配列の値を順にコンソールに出力してください
+    for (let i = 0; i < Item.length; i++) {
+        console.log(Item[i].weapon); // 剣 ナイフ ハンマー
+    }
 
-// // 配列を用いて、1から100までの数字を出力してください
+    // for文を用いて、配列の値を順にコンソールに出力してください
+    for (let i = 0; i < Item.length; i++) {
+        console.log(Item[i].price); // 500 300 1000
+    }
 
-//     let numbers = [];
-//     for (let number = 1; number <= 100; number++) {
-//         numbers.push(number);
-//     }
+/*
+配列  配列{オブジェクト}と繰り返し処理 2 --------------------------------------------------------------------------------------------
+*/
+    const Items = [
+        {weapon: "剣", price: 500},
+        {weapon: "ナイフ", price: 300},
+        {weapon: "ハンマー", price: 1000},
+    ];
+
+    // for文を用いて、配列の値を順にコンソールに出力してください
+    for (let i = 0; i < Items.length; i++) {
+        console.log(Items[i]); // {weapon: "剣", price: 500} {weapon: "ナイフ", price: 300} {weapon: "ハンマー", price: 1000}
+    }
+
+    // for文を用いて、配列の値を順にコンソールに出力してください
+    for (let i = 0; i < Items.length; i++) {
+        console.log(Items[i].weapon); // 剣 ナイフ ハンマー
+    }
+
+    // for文を用いて、配列の値を順にコンソールに出力してください
+    for (let i = 0; i < Items.length; i++) {
+        console.log(Items[i].price); // 500 300 1000
+    }
