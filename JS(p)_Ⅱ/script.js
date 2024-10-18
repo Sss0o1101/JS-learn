@@ -179,3 +179,94 @@ for文 if else 1 ---------------------------------------------------------------
     for (let i = 0; i < Items.length; i++) {
         console.log(Items[i].price); // 500 300 1000
     }
+
+// pⅡ----------------------------------------------------------------------------------------------------
+
+
+
+/*
+ undefined --------------------------------------------------------------------------------------------
+*/
+    const item = {weapon: "剣", price: 500};
+
+    console.log(item.weapon); // 剣
+    console.log(item.price); // 500
+    console.log(item.level); // undefined
+
+    // オブジェクトの武器の値を"ナイフ"に更新してください
+    item.level = 10;
+    console.log(item.level); // undefined
+
+
+/*
+ undefined 2 --------------------------------------------------------------------------------------------
+*/
+    const item = [
+        {weapon: "剣", price: 500},
+        {weapon: "ナイフ", price: 300},
+        {weapon: "ハンマー", price: 1000},
+    ];
+
+    console.log(item[0].weapon); // 剣
+    console.log(item[1].price); // 300
+    console.log(item[2].level); // undefined
+
+    // オブジェクトの武器の値を"ナイフ"に更新してください
+    item[0].level = 10;
+    console.log(item[0].level); // undefined
+
+
+/*
+ undefined 3 --------------------------------------------------------------------------------------------
+*/
+    const item = [
+        {weapon: "剣", price: 500},
+        {weapon: "ナイフ", price: 300},
+        {weapon: "ハンマー", price: 1000},
+    ];
+
+    // for文を用いて、配列の値を順にコンソールに出力してください
+    for (let i = 0; i < item.length; i++) {
+        console.log(item[i]); // {weapon: "剣", price: 500} {weapon: "ナイフ", price: 300} {weapon: "ハンマー", price: 1000}
+    }
+
+    // for文を用いて、配列の値を順にコンソールに出力してください
+    for (let i = 0; i < item.length; i++) {
+        console.log(item[i].weapon); // 剣 ナイフ ハンマー
+    }
+
+    // for文を用いて、配列の値を順にコンソールに出力してください
+    for (let i = 0; i < item.length; i++) {
+        console.log(item[i].price); // 500 300 1000
+    }
+
+/*
+ 総合演習 1 (複雑なオブジェクトを扱う)--------------------------------------------------------------------------------------------
+*/
+
+    const cafe = {name: "Proカフェ", businessHours: { opening: "10:00(AM)",closing: "8:00(PM)"}};
+
+    // 「店名:〇〇」を出力してください
+    console.log(`店名:${cafe.name}`); // 店名:Proカフェ
+
+    // 「営業時間:〇〇から△△」を出力してください
+    console.log(`営業時間: ${cafe. businessHours.opening}から${cafe. businessHours.closing}`); // 営業時間: 10:00(AM)から8:00(PM)
+
+/*
+ 総合演習 2 (複雑なオブジェクトを扱う)--------------------------------------------------------------------------------------------
+*/
+    const Cafe = {name: "Proカフェ",businessHours: {opening: "10:00(AM)",closing: "8:00(PM)"},menus: ["コーヒー", "紅茶", "チョコレートケーキ"]};
+
+    console.log(`店名: ${Cafe.name}`); // 店名: Proカフェ
+    console.log(`営業時間:${Cafe.businessHours.opening}から${Cafe.businessHours.closing}`); // 営業時間: 10:00(AM)から8:00(PM)
+    console.log(`----------------------------`); // ----------------------------
+    console.log("おすすめメニューはこちら"); // おすすめメニューはこちら
+    console.log(Cafe.menus); // ["コーヒー", "紅茶", "チョコレートケーキ"]
+    console.log(Cafe.menus[0]); // コーヒー
+    console.log(Cafe.menus[1]); // 紅茶
+    console.log(Cafe.menus[2]); // チョコレートケーキ
+
+    // for文を用いて配列menusの中身を表示させてください
+    for (let i =0; i < Cafe.menus.length; i++) {
+        console.log(Cafe.menus[i]); // コーヒー 紅茶 チョコレートケーキ
+    }

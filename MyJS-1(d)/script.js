@@ -71,14 +71,17 @@ console.log(price * 140 * rate); // 21250
 文字列--------------------------------------------
 */
 
-console.log('It is a pen.');
-console.log('It\'s a pen.');
-console.log("It's a pen.");
-console.log("It's \na \npen."); //  「\n」は改行 「\」は Optionキーを押しながら「￥」キーを押す。
+console.log('It is a pen.'); // It is a pen.
+console.log('It\'s a pen.'); // It's a pen.
+console.log("It's a pen."); // It's a pen.
+console.log("It's \na \npen.");// It's
+                                // a
+                                // pen.
+                                // \n」は改行 「\」は Optionキーを押しながら「￥」キーを押す。
 
 
 /*
-文字列の操作--------------------------------------------
+文字列の操作 テンプレートリテラル　--------------------------------------------
 */
 
 // 「 My name is Taro Yamada, call me Taro! 」 のケース
@@ -97,7 +100,7 @@ console.log(`My name is ${fname} ${lname}, call me ${fname}`);  //テンプレ�
 
 const n = prompt('Any number?');
 
-console.log(Number(n) + 10);
+console.log(Number(n) + 10); // 100
 
 
 
@@ -146,9 +149,9 @@ switch (color) {
 //信号機の色を入力してもらって、それに応じたメッセージを出すというプログラム
 //(red)
 
-const color = prompt('Color?');
+const Color = prompt('Color?');
 
-switch (color) {
+switch (Color) {
     case 'red':
         console.console.log('stop');
         break;
@@ -165,9 +168,9 @@ switch (color) {
 //red,yellow,blueのケース
 //また、これらのどれにも一致しなかった場合の処理も書くことができて、その場合は default とする。
 
-const color = prompt('Color?');
+const colors = prompt('Color?');
 
-switch (color) {
+switch (colors) {
     case 'red':
         console.console.log('stop');
         break;
@@ -217,21 +220,21 @@ console.log(price * 130 * rate);   //19740
 console.log(price * 140 * rate);   //21250
 //150 円 151 円のときだけでなく、160 円までの売り上げを知りたかった時のケース
 
-let price;
-const rate = 1.1;
+let prices;
+const rates = 1.1;
 
-for (let price = 150; price < 160; price++) {
+for (let prices = 150; prices < 160; prices++) {
     console.log(`price: ${price}`);
 }
 
-price = 150;
-console.log(price * 120 * rate);   //18150
-console.log(price * 130 * rate);   //19500
+prices = 150;
+console.log(prices * 120 * rates);   //18150
+console.log(prices * 130 * rates);   //19500
 console.log(price * 140 * rate);   //21000
 
 //120 から 140 まで、10 ずつ増やしたいが、10 増やして再代入していくには、以前に見たこちらの記法を使う。
 
-const rate = 1.1;
+const Rate = 1.1;
 
 for (let price = 150; price <= 160; price++) {
   console.log(`Price: ${price}`);

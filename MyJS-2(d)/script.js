@@ -4,6 +4,7 @@
 
 const scores = [10, 20, 30, 40, 50];
 
+console.log(scores); //[10, 20, 30, 40, 50]
 console.log(scores[0]); //10
 console.log(scores[1]); //20
 console.log(scores[2]); //30
@@ -28,7 +29,7 @@ scores.shift(); //先頭の要素を削除
 const scores = [10, 20, 30, 40, 50];
 
 for (let i = 0; i <= scores.length; i++) {
-    console.log(scores[i]);
+    console.log(scores[i]); // 10 20 30 40 50
 }
 
 /*
@@ -104,7 +105,9 @@ console.log(scores);  //更新された数学の点数
 
 const scores = {math: 80, english: 90};
 
-scores.physics = 70;  //{math: 80, english: 90, physics: 70} この様に物理の点数も追加される。
+scores.physics = 70;
+console.log(scores);  //{math: 80, english: 90, physics: 70} この様に物理の点数も追加される。
+
 delete scores.english;  //英語の点数(プロパティ)の削除
 
 /*
@@ -129,18 +132,18 @@ Object.entries()を使ってプロパティの値を集計(点数の合計と平
 
 const scores = {math: 80, english: 90};
 
-let sum = 0;
+let Sum = 0;
 
 scores.physics =70;
 
-const entries = Object.entries(scores)
-entries.forEach((prop) =>{
-    sum += prop[1];
+const Entries = Object.entries(scores)
+Entries.forEach((prop) =>{
+    Sum += prop[1];
     console.log(`${prop[0]} ${prop[1]}`);
 })
 
-console.log(`Sum: ${sum}`);   // Sum: 240
-console.log(`Average: ${sum / entries.length}`);  //Average: 80
+console.log(`Sum: ${Sum}`);   // Sum: 240
+console.log(`Average: ${Sum / Entries.length}`);  //Average: 80
 
 
 
@@ -170,10 +173,10 @@ console.log(names.join('|')); // Taro|Jiro|Saburo
 console.log(names.join()); // Taro,Jiro,Saburo
 console.log(names.join('')); // TaroJiroSaburo
 
-const names = 'Taro|Jiro|Saburo';
-console.log(names.split('|')); // ['Taro', 'Jiro', 'Saburo']
-console.log(names.split()); // ['Taro|Jiro|Saburo']
-console.log(names.split('')); // ['T', 'a', 'r', 'o', '|', 'J', 'i', 'r', 'o', '|', 'S', 'a', 'b', 'u', 'r', 'o']
+const Names = 'Taro|Jiro|Saburo';
+console.log(Names.split('|')); // ['Taro', 'Jiro', 'Saburo']
+console.log(Names.split()); // ['Taro|Jiro|Saburo']
+console.log(Names.split('')); // ['T', 'a', 'r', 'o', '|', 'J', 'i', 'r', 'o', '|', 'S', 'a', 'b', 'u', 'r', 'o']
 
 
 /*
